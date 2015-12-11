@@ -1,0 +1,21 @@
+<nav class="navbar navbar-fixed-top navbar-inverse">
+    <div class="container">
+        <div class="navbar-header">
+           <button type="button" class="navbar-toggle" 
+              data-toggle="collapse" data-target="#navbar-collapsible-content">
+              <span class="sr-only">Toggle navigation</span>
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+              <span class = "icon-bar"></span>
+           </button>
+        <%= link_to "sample app", root_path, id: "logo" %>
+        </div>
+        <div class="collapse navbar-collapse" id="navbar-collapsible-content">
+          <ul class="nav navbar-nav navbar-right">
+            <li><%= link_to "Home", root_path %></li>
+            <li><%= link_to "Help",    help_path %></li>
+            <li><%= link_to "Log in", '#' %></li>
+          </ul>
+        </div>
+    </div>
+</nav>
